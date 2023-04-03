@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Moody Judy Weather Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moody JudyWeather App</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <header>
-      <h1>Moody Judy Weather Dashboard</h1>
+      <h1>Moody Judy Weather App</h1>
       <form>
-        <input type="text" id="city-input" placeholder="Enter a city name">
-        <button type="submit" id="search-button">Search</button>
+        <label for="city-input">City:</label>
+        <input type="text" placeholder="Please enter city name" id="city-input" />
+        <button id="search-btn">Search</button>
       </form>
     </header>
     <main>
-      <section id="current-weather"></section>
-      <section id="forecast"></section>
+      <section class="current-weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather-card" class="weather-card"></div>
+      </section>
+      <section class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="forecast-cards"></div>
+      </section>
+      <aside>
+        <h2>Search History</h2>
+        <ul id="search-history"></ul>
+      </aside>
     </main>
-    <footer>
-      <p>© 2023 Moody Judy Weather Dashboard</p>
-    </footer>
     <script src="assets/script.js"></script>
   </body>
 </html>
