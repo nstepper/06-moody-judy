@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moody JudyWeather App</title>
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Moody Judy Weather App</h1>
-      <form>
-        <label for="city-input">City:</label>
-        <input type="text" placeholder="Please enter city name" id="city-input" />
-        <button id="search-btn">Search</button>
-      </form>
-    </header>
-    <main>
-      <section class="current-weather">
-        <h2>Current Weather</h2>
-        <div id="current-weather-card" class="weather-card"></div>
-      </section>
-      <section class="forecast">
-        <h2>5-Day Forecast</h2>
-        <div class="forecast-cards"></div>
-      </section>
-      <aside>
-        <h2>Search History</h2>
-        <ul id="search-history"></ul>
-      </aside>
-    </main>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="city-input">Enter City:</label>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-button" type="submit">Search</button>
+        </form>
+        <div id="search-history"></div>
+        <div id="current-weather"></div>
+        <div id="future-weather"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/script.js"></script>
-  </body>
+</body>
 </html>
